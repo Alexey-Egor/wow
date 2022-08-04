@@ -9,18 +9,6 @@ a {
     text-decoration: none;
 }
 
-/* body {
-    background-image: url(../img/bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1; 
-} */
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -210,7 +198,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 165px;
+    padding-top: 95px;
 }
 
 .title__text h2 {
@@ -521,7 +509,7 @@ a {
 
 .best {
     position: relative;
-    height: 400px;
+    height: 415px;
     z-index: 20 ;
 }
 
@@ -540,10 +528,6 @@ a {
 
 .filter {
     background: rgba(0,0,0,0.2);
-}
-
-.best__title {
-    
 }
 
 .best__title h2 {
@@ -574,7 +558,7 @@ a {
     position: relative;
     z-index: 20;
     padding: 100px 210px;
-    border: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 .info__title {
@@ -605,4 +589,73 @@ a {
     background: #fff;
     position: relative;
     z-index: 20;
+}
+
+.about__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about__title {
+    color: #2e3b4e;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.span-one, .span-two {
+    color: #5f6a7d;
+    font-size: 14px;
+}
+
+.callme {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 18px;
+    margin-right: 20px;
+    padding-bottom: 105px;
+}
+
+.callme a{
+    font-size: 24px;
+    color: rgb(95, 106, 125);
+    font-weight: 500;
+}
+
+.callme__btn {
+    font-size: 14px;
+    color: #5f6a7d;
+    padding: 15px 30px;
+    background: #fff;
+    border: 1px solid #e3e8ed;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.callme__btn:hover {
+    background-color: #fdcd5e;
+    color: #2e3b4e;
+    border-color: #fdcd5e;
+}
+
+.footer__down {
+    border-top: 1px solid #e3e8ed;
+    padding: 50px 0;
+}
+
+.footer__copyright {
+    color: #666666;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer__copyright span {
+    font-weight: 400;
 }
