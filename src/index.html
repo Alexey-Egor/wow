@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <link rel="stylesheet" href="css/style.css">
     <script src="../node_modules/jquery/dist/jquery.min.js" defer></script>
     <script src="js/script.js" defer></script>
@@ -20,13 +21,13 @@
             <div class="nav__center">
                 <ul class="nav__items">
                     <li class="nav__item">
-                        <a href="#">Как это работает</a>
+                        <a href="#howwork">Как это работает</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#">Примеры работ</a>
+                        <a href="#myworks">Примеры работ</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#">Стоимость</a>
+                        <a href="#price">Стоимость</a>
                     </li>
                 </ul>
             </div>
@@ -37,6 +38,48 @@
             </div>
         </nav>
     </header>
+
+    <div id="dialog-content">
+        <section id="contact">
+            <div class="contact-box">
+              <div class="contact-links">
+                <h2>CONTACT</h2>
+                <div class="links">
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+                  </div>
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+                  </div>
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
+                  </div>
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form-wrapper">
+                <form>
+                  <div class="form-item">
+                    <input type="text" name="sender" required>
+                    <label>Name:</label>
+                  </div>
+                  <div class="form-item">
+                    <input type="text" name="email" required>
+                    <label>Email:</label>
+                  </div>
+                  <div class="form-item">
+                    <textarea class="" name="message" required></textarea>
+                    <label>Message:</label>
+                  </div>
+                  <button class="submit-btn">Send</button>  
+                </form>
+              </div>
+            </div>
+          </section>
+    </div>
+
     <section class="logoorder">
         <div class="topsect">
             <div class="container">
@@ -44,8 +87,8 @@
                     <h1>Заказать логотип по разумной цене и в оптимальные сроки </h1>
                     <div class="topsect__descr">wowlogo — сервис для малого и среднего бизнеса, который позволяет быстро и безопасно заказать разработку профессионального логотипа</div>
                     <div class="topsect__btn">
-                        <button class="btn btn-order">Заказать логотип</button>
-                        <button class="btn btn-work">Проекты</button>
+                        <button data-fancybox="dialog" data-src="#dialog-content" class="btn btn-order">Заказать логотип</button>
+                        <a href="#myworks" class="btn btn-work">Проекты</a>
                     </div>
                 </div>
             </div>
@@ -85,9 +128,9 @@
         </div>
     </section>
 
-    <section class="howwork">
+    <section id="howwork" class="howwork">
         <div class="container">
-            <div class="howwork__text title__text">
+            <div  class="howwork__text title__text">
                 <h2>Как работает wowlogo</h2>
                 <span>Оформите заказ в несколько простых шагов и ваш логотип будет готов через 14 рабочих дней</span>
             </div>
@@ -126,7 +169,7 @@
 
     </section>
 
-    <section class="myworks">
+    <section id="myworks" class="myworks">
         <div class="container myworks__title title__text">
             <h2>Примеры работ wowlogo</h2>
             <span>Избранные работы, реализованные нашими специалистами</span>
@@ -143,7 +186,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section id="price" class="price">
         <div class="container">
             <div class="price__title title__text">
                 <h2>Стоимость разработки логотипа</h2>
@@ -338,5 +381,7 @@
             
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 </html>
