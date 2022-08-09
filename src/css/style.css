@@ -20,6 +20,12 @@ a {
     position: fixed;
     top: 0;
     z-index: 999;
+    transition: all 0.4s;
+}
+
+.header.active {
+    background-color: rgb(57, 70, 92);
+    transition: all 0.4s;
 }
 
 .header__nav {
