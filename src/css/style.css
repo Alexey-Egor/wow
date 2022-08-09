@@ -674,6 +674,9 @@ a {
 }
 
 /* modal */
+#dialog-content {
+    display: none;
+}
 
 .fancybox__content {
     margin: 0;
