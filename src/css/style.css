@@ -95,6 +95,8 @@ a {
 .logoorder {
     position: relative;
     z-index: 10;
+    min-height: 100vh;
+    background: #39465c;
 }
 
 .topsect {
@@ -275,6 +277,12 @@ a {
     background-color: #fdcd5e;
     border-radius: 3px;
     border: none;
+}
+
+.howwork__btn:hover {
+    background-color: #f7cd46;
+    border-color: #f7cd46;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .myworks {
@@ -465,10 +473,12 @@ a {
 
 .solution__logo {
     position: absolute;
-    top: 0;
-    width: 45%;
-    right: 6%;
-}
+    top: 50%;
+    width: 100%;
+    left: 25%;
+    transform: translateY(-50%);
+    height: 900px;
+  }
 
 .questions {
     position: relative;
@@ -479,7 +489,7 @@ a {
     display: flex;
     flex: 1 1 0;
     align-items: center;
-    gap: 30px;
+    gap: 35px;
     padding-top: 120px;
 }
 
@@ -495,7 +505,12 @@ a {
     box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 0%);
     padding: 60px 30px 30px;
     min-height: 370px;
+    width: calc(100%/3);
 }
+
+.questions__item:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10) !important;
+  }
 
 .questions__item img {
     width: 100px;
@@ -783,10 +798,6 @@ img {
   user-select: none;
 }
 
-img:hover {
-  transform: scale(1.1, 1.1);
-}
-
 img:active {
   transform: scale(1.1, 1.1);
   filter: 
@@ -878,3 +889,5 @@ textarea:valid+label {
     height: 38px;
   }
 }
+
+/* -------------- */

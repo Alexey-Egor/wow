@@ -41,4 +41,13 @@ $(document).ready(function(){
         });
     }
 
+
+    $('.burger-close').click(function() {
+        $('.nav__center.only_phone').toggleClass('active');
+        $('.burger-close').toggleClass('open');
+        $('body').toggleClass('hidden');
+	});
+
 });
+
+
