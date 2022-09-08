@@ -10,6 +10,22 @@ $(document).ready(function(){
       }, 600);
     });
 
+    $(document).on("scroll", onScroll);
+    $("a[href^='#']").click(function(e){
+        e.preventDefault();
+        $(document).off("scroll");
+        $(menu_selector + " a.active").removeClass("active");
+        $(this).addClass("active");
+        var hash = $(this).attr("href");
+        var target = $(hash);
+        $("html, body").animate({
+            scrollTop: target.offset().top
+        }, 500, function(){
+            window.location.hash = hash;
+            $(document).on("scroll", onScroll);
+        });
+    });
+
     var menu_selector = ".nav__items";
     function onScroll(){
         var scroll_top = $(document).scrollTop();
@@ -24,22 +40,5 @@ $(document).ready(function(){
             }
         });
     }
-    $(document).ready(function () {
-        $(document).on("scroll", onScroll);
-        $("a[href^='#']").click(function(e){
-            e.preventDefault();
-            $(document).off("scroll");
-            $(menu_selector + " a.active").removeClass("active");
-            $(this).addClass("active");
-            var hash = $(this).attr("href");
-            var target = $(hash);
-            $("html, body").animate({
-                scrollTop: target.offset().top
-            }, 500, function(){
-                window.location.hash = hash;
-                $(document).on("scroll", onScroll);
-            });
-        });
-    });
 
 });
