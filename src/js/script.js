@@ -46,6 +46,16 @@ $(document).ready(function(){
         $('.nav__center.only_phone').toggleClass('active');
         $('.burger-close').toggleClass('open');
         $('body').toggleClass('hidden');
+        const items = document.querySelectorAll('.nav__item a');
+        items.forEach(element => {
+            $(element).removeClass('active');
+        });
+	});
+
+    const item = document.querySelectorAll('.nav__item');
+    $(item).click(function() {
+        $('body').removeClass('hidden');
+        $('.nav__center.only_phone').toggleClass('active');
 	});
 
 });

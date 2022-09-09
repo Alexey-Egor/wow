@@ -51,7 +51,7 @@ display: none;
     margin: 0;
 }
 
-.nav__center.active.only_phone .nav__items {
+.nav__center.active.only_phone .nav__items, .nav__items_phone {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,13 +133,26 @@ display: none;
         display: none;
     }
 
+}
+
 @media screen and (max-width: 980px){
 
     .container {
         max-width: 640px;
     }
+
+    .topsect .container {
+        margin: 0;
+    }
+
+    .topsect__wrapper {
+        padding: 5px 0 0 100px;
+        width: 100%;
+    }
  
     .topsect__wrapper h1 {
+        font-size: 30px;
+        line-height: 1.3;
         padding: 100px 0 38px 0;
     }
 
@@ -220,8 +233,99 @@ display: none;
     }
 }
 
+@media screen and (max-width: 960px){
+    .downsect {
+        margin-top: 0;
+      }
+
+    .container{
+        margin: 0 auto;
+    }
+    .topsect .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .questions__items {
+        flex-direction: column;
+      }
+
+      .questions__item {
+        width: 100%;
+      }
+}
+
 @media screen and (max-width: 660px) {
-    .best__bg {
+
+    /* .best__bg {
+        display: none;
+    } */
+
+    .topsect .container {
+        padding: 0 25px;
+      }
+
+    .container.downsect__wrapper {
+        padding:0 20px;
+    }
+
+    .topsect__wrapper {
+        padding: 0;
+        width: 100%;
+        max-width: 630px;
+    }
+
+    .topsect__wrapper h1 {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .howwork {
+        padding: 0 22px 120px;
+    }
+
+    .price .container, .advantage .container, .solution .container, .questions .container {
+        padding: 0 20px;
+    }
+
+    .footer {
+        padding: 20px 20px;
+    }
+    
+    .callme {
         display: none;
     }
+
+    .about__items{
+        flex-wrap: wrap;
+    }
+
+    .about__item {
+        width: 50%;
+        margin: 20px 0;
+    }
+
+    .footer__down {
+        padding: 0;
+        padding-top: 20px;
+      }
+}
+
+@media screen and (max-width: 360px) {
+    .btn-work {
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+      .container.downsect__wrapper {
+        padding: 345px 20px 0;
+      }
+
+      .solution__logo {
+        top: 32%;
+      }
+
+      .about__items {
+        flex-direction: column;
+      }
 }
