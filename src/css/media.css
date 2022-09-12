@@ -308,24 +308,28 @@ display: none;
     .footer__down {
         padding: 0;
         padding-top: 20px;
-      }
+    }
 }
 
 @media screen and (max-width: 360px) {
     .btn-work {
         display: inline-block;
         margin-top: 20px;
-      }
+    }
 
-      .container.downsect__wrapper {
+        .container.downsect__wrapper {
         padding: 345px 20px 0;
-      }
+    }
 
-      .solution__logo {
+        .solution__logo {
         top: 32%;
-      }
+    }
 
-      .about__items {
+        .myworks__item {
+        height: 300px;
+    }
+
+        .about__items {
         flex-direction: column;
-      }
+    }
 }
