@@ -95,8 +95,10 @@ a {
 .logoorder {
     position: relative;
     z-index: 10;
-    min-height: 100vh;
     background: #39465c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .topsect {
@@ -474,10 +476,10 @@ a {
 .solution__logo {
     position: absolute;
     top: 50%;
-    width: 100%;
-    left: 25%;
+    width: 24%;
+    left: 60%;
     transform: translateY(-50%);
-    height: 900px;
+    height: auto;
   }
 
 .questions {
