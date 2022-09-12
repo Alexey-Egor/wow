@@ -212,7 +212,7 @@ display: none;
     }
 
     .solution {
-        padding: 48px 0 280px;
+        padding: 48px 0 80px;
     }
 
     .solution__wrapper {
@@ -222,14 +222,14 @@ display: none;
 
     .solution__text {
         width: 100%;
+        padding: 20px 0 60px;
     }
 
     .solution__logo {
-        top: 0;
-        width: 100%;
-        height: 900px;
+        width: 60%;
+        height: auto;
         transform: none;
-        left: 0;
+        position: inherit;
     }
 }
 
